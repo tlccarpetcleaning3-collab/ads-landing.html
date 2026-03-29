@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TLC Business Card Draft</title>
+<style>
+  body { background: #1a1a2e; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; font-family: 'Segoe UI', sans-serif; gap: 2rem; color: #fff; margin: 0; padding: 2rem; }
+  h2 { margin: 0; color: #8891a8; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.1em; }
+  
+  .card {
+    width: 3.5in;
+    height: 2in;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+    position: relative;
+  }
+  
+  /* FRONT */
+  .card-front {
+    background: linear-gradient(135deg, #0a0b10 0%, #13151f 50%, #0f1117 100%);
+    padding: 0.35in;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    position: relative;
+  }
+  
+  .card-front::before {
+    content: '';
+    position: absolute;
+    top: -30%;
+    right: -20%;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(59,130,246,0.1) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  
+  .card-front .logo-area {
+    display: flex;
+    align-items: center;
+    gap: 0.15in;
+  }
+  
+  .card-front .logo-area img {
+    height: 0.5in;
+    width: auto;
+  }
+  
+  .card-front .tagline {
+    font-size: 7.5pt;
+    color: #8891a8;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  
+  .card-front .bottom-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  
+  .card-front .contact-info {
+    font-size: 8pt;
+    line-height: 1.6;
+    color: #c8cdd8;
+  }
+  
+  .card-front .contact-info .phone {
+    font-size: 11pt;
+    font-weight: 700;
+    color: #3b82f6;
+    letter-spacing: 0.03em;
+  }
+  
+  .card-front .contact-info .website {
+    color: #60a5fa;
+    font-size: 7.5pt;
+  }
+  
+  .card-front .services {
+    text-align: right;
+    font-size: 6.5pt;
+    color: #6b7280;
+    line-height: 1.7;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  
+  /* BACK */
+  .card-back {
+    background: linear-gradient(135deg, #0a0b10 0%, #13151f 100%);
+    padding: 0.3in;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    position: relative;
+  }
+  
+  .card-back::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 50% 50%, rgba(59,130,246,0.06) 0%, transparent 60%);
+    pointer-events: none;
+  }
+  
+  .card-back .badge-row {
+    display: flex;
+    gap: 0.2in;
+    margin-bottom: 0.15in;
+  }
+  
+  .card-back .badge {
+    font-size: 6pt;
+    color: #3b82f6;
+    border: 1px solid rgba(59,130,246,0.3);
+    border-radius: 4px;
+    padding: 3px 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 600;
+  }
+  
+  .card-back .services-list {
+    font-size: 7.5pt;
+    color: #c8cdd8;
+    line-height: 1.8;
+    margin-bottom: 0.12in;
+  }
+  
+  .card-back .cta {
+    font-size: 8.5pt;
+    color: #3b82f6;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+  }
+  
+  .card-back .area {
+    font-size: 6pt;
+    color: #6b7280;
+    margin-top: 0.08in;
+    letter-spacing: 0.03em;
+  }
+
+  .note { color: #6b7280; font-size: 0.75rem; max-width: 3.5in; text-align: center; line-height: 1.5; }
+</style>
+</head>
+<body>
+
+<h2>Front</h2>
+<div class="card">
+  <div class="card-front">
+    <div>
+      <div class="logo-area">
+        <img src="images/logo-header.png" alt="TLC Logo">
+      </div>
+      <div class="tagline">Family-Owned Since 1991 · Danville, IL</div>
+    </div>
+    <div class="bottom-row">
+      <div class="contact-info">
+        <div class="phone">217-442-6752</div>
+        <div class="website">tlccarpetcleaning.com</div>
+        <div>Tlccarpetcleaning3@gmail.com</div>
+      </div>
+      <div class="services">
+        Carpet Cleaning<br>
+        Pet Stain Removal<br>
+        Tile &amp; Grout<br>
+        Upholstery<br>
+        Area Rugs
+      </div>
+    </div>
+  </div>
+</div>
+
+<h2>Back</h2>
+<div class="card">
+  <div class="card-back">
+    <div class="badge-row">
+      <div class="badge">IICRC Certified</div>
+      <div class="badge">35+ Years</div>
+      <div class="badge">Family Owned</div>
+    </div>
+    <div class="services-list">
+      Carpet Cleaning · Pet Stain &amp; Odor Removal · Tile &amp; Grout<br>
+      Upholstery Cleaning · Area Rug Cleaning · Commercial Services
+    </div>
+    <div class="cta">Call Today for a Free Estimate</div>
+    <div class="area">Serving Danville &amp; All of Vermilion County · 30 Mile Radius</div>
+  </div>
+</div>
+
+<p class="note">This is a draft mockup. The dark theme matches your website. Can be printed as-is or adjusted to any colors/layout you prefer.</p>
+
+</body>
+</html>

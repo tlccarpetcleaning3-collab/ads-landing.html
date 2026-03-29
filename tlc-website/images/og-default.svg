@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="TLC Carpet and Upholstery Cleaning Danville IL">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f6e8d" />
+      <stop offset="100%" stop-color="#1f9a8f" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g)" />
+  <rect x="70" y="70" width="1060" height="490" rx="26" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.25)" />
+  <text x="110" y="240" fill="#ffffff" font-family="'Source Sans 3', Arial, sans-serif" font-size="64" font-weight="700">TLC Carpet &amp; Upholstery Cleaning</text>
+  <text x="110" y="320" fill="#e3f8ff" font-family="'Source Sans 3', Arial, sans-serif" font-size="40" font-weight="600">Danville IL | Serving Vermilion County</text>
+  <text x="110" y="400" fill="#ffffff" font-family="'Source Sans 3', Arial, sans-serif" font-size="46" font-weight="700">Call 217-442-6752</text>
+</svg>
